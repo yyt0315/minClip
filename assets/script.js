@@ -6,7 +6,7 @@
   btn.classList.add('loading');
   text.textContent = '获取下载链接...';
 
-  fetch('https://api.github.com/repos/yyt0315/minClip-dev/releases/latest')
+  fetch('https://api.github.com/repos/yyt0315/minClip/releases/latest')
     .then(function(res) {
       if (!res.ok) throw new Error('API error');
       return res.json();
