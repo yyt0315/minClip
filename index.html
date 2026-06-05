@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="MinClip - macOS 菜单栏剪贴板管理工具，支持三栏工作台、智能搜索、文本处理与永久保存">
-  <title>MinClip - macOS 菜单栏剪切板管理工具</title>
+  <meta name="description" content="MinClip 是一款面向 macOS 的菜单栏剪贴板工具，支持自动记录、先查看再复制、拼音搜索与永久保存">
+  <title>MinClip - macOS 菜单栏剪贴板工具</title>
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
@@ -13,17 +13,16 @@
   <div class="hero-content">
     <img class="hero-icon" src="assets/screenshots/icon.png" alt="MinClip" onerror="this.style.display='none'">
     <h1>MinClip</h1>
-    <p class="hero-tagline">面向高频复制场景的 macOS 菜单栏剪贴板工具</p>
-    <p class="hero-desc">自动记录剪贴板历史，支持文本、图片、文件和富文本内容。现在提供三栏联动工作台、右侧预览区、拼音搜索和内置文本处理能力。</p>
+    <p class="hero-tagline">让常用内容随手找回，也让复制这件事更稳、更快</p>
+    <p class="hero-desc">MinClip 会在后台自动记录你复制过的内容。1.2 版本进一步强化“先查看，再复制”的日常体验，同时保留极客模式下的高效率工作流。</p>
     <div class="hero-actions">
       <a id="download-btn" class="btn-download" href="https://github.com/yyt0315/minClip/releases/latest" target="_blank">
         <span class="btn-icon">↓</span>
         <span id="download-text">下载最新版本</span>
       </a>
       <a class="btn-gh" href="https://github.com/yyt0315/minClip" target="_blank">GitHub</a>
-      <a class="btn-gh" href="CHANGELOG.md">更新记录</a>
     </div>
-    <p class="hero-platform">当前版本 v1.1.0 · 支持 macOS 14+ · Intel & Apple Silicon</p>
+    <p class="hero-platform">当前版本 v1.2 · 支持 macOS 14+ · Intel & Apple Silicon</p>
   </div>
 </header>
 
@@ -43,66 +42,68 @@
     <h2>核心功能</h2>
     <div class="feature-grid">
       <div class="feature-card">
-        <div class="feature-icon">📋</div>
-        <h3>自动记录剪切板历史</h3>
-        <p>自动捕获文本、图片、文件和富文本内容</p>
+        <div class="feature-icon" aria-hidden="true">
+          <svg viewBox="0 0 256 256" fill="none">
+            <path d="M168 48h24a8 8 0 0 1 8 8v152a8 8 0 0 1-8 8H64a8 8 0 0 1-8-8V56a8 8 0 0 1 8-8h24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
+            <rect x="88" y="24" width="80" height="48" rx="8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
+          </svg>
+        </div>
+        <h3>自动记录剪贴板历史</h3>
+        <p>文本、图片、文件和富文本内容都会被自动保留，刚复制过的东西不容易丢。</p>
       </div>
       <div class="feature-card">
-        <div class="feature-icon">⚡</div>
-        <h3>菜单栏快速访问</h3>
-        <p>点击菜单栏图标或使用 ⌘⇧V 快捷键打开历史记录</p>
+        <div class="feature-icon" aria-hidden="true">
+          <svg viewBox="0 0 256 256" fill="none">
+            <path d="m184 72 16-16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
+            <path d="m192 96 24-8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
+            <path d="m160 64 8-24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
+            <path d="m43.3 162.7 120-120a8 8 0 0 1 11.4 0l38.6 38.6a8 8 0 0 1 0 11.4l-120 120a8 8 0 0 1-5.7 2.3H48a8 8 0 0 1-8-8v-39.6a8 8 0 0 1 2.3-5.7Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
+          </svg>
+        </div>
+        <h3>普通模式 / 极客模式</h3>
+        <p>普通模式更适合先查看再复制，极客模式则保留单击即复制的高效率路径。</p>
       </div>
       <div class="feature-card">
-        <div class="feature-icon">🧭</div>
-        <h3>三栏联动工作台</h3>
-        <p>侧边栏、历史列表和预览区协同工作，浏览与整理更高效</p>
+        <div class="feature-icon" aria-hidden="true">
+          <svg viewBox="0 0 256 256" fill="none">
+            <circle cx="116" cy="116" r="84" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
+            <path d="m175.4 175.4 48.6 48.6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
+          </svg>
+        </div>
+        <h3>搜索与预览更适合中文场景</h3>
+        <p>支持中文、拼音全拼和首字母匹配，配合预览区能更快确认要找的内容。</p>
       </div>
       <div class="feature-card">
-        <div class="feature-icon">⭐</div>
-        <h3>永久保存收藏</h3>
-        <p>将常用内容永久保存到分类中，支持快捷键快速保存</p>
+        <div class="feature-icon" aria-hidden="true">
+          <svg viewBox="0 0 256 256" fill="none">
+            <path d="m128 32 28.8 58.3 64.4 9.4-46.6 45.4 11 64.1L128 179l-57.6 30.2 11-64.1L34.8 99.7l64.4-9.4Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
+          </svg>
+        </div>
+        <h3>永久保存与分类沉淀</h3>
+        <p>把高频命令、话术、模板和链接从临时历史里提取出来，整理成长期可复用素材。</p>
       </div>
       <div class="feature-card">
-        <div class="feature-icon">📌</div>
-        <h3>置顶显示</h3>
-        <p>永久保存的内容可置顶，始终显示在列表最上方</p>
+        <div class="feature-icon" aria-hidden="true">
+          <svg viewBox="0 0 256 256" fill="none">
+            <rect x="32" y="72" width="192" height="136" rx="8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
+            <path d="M96 72V56a16 16 0 0 1 16-16h32a16 16 0 0 1 16 16v16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
+            <path d="M32 120h192" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
+          </svg>
+        </div>
+        <h3>复制前可顺手处理文本</h3>
+        <p>支持纯文本整理、JSON 格式化、URL / Base64 编解码和富文本转 Markdown。</p>
       </div>
       <div class="feature-card">
-        <div class="feature-icon">🏷️</div>
-        <h3>分类管理</h3>
-        <p>自定义分类，支持颜色、图标、拖拽排序和独立存储路径</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon">🔍</div>
-        <h3>智能搜索</h3>
-        <p>支持中文、拼音全拼、拼音首字母和英文首字母快速匹配</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon">👁️</div>
-        <h3>右侧预览面板</h3>
-        <p>更适合查看长文本、图片、文件和富文本内容</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon">📤</div>
-        <h3>导出功能</h3>
-        <p>将分类内容导出为 CSV 文件</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon">🔧</div>
-        <h3>内置文本处理工具</h3>
-        <p>支持 JSON 格式化、去除富文本格式、URL 解码、Base64 编解码等操作</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon">📝</div>
-        <h3>富文本转 Markdown</h3>
-        <p>复制网页或文档内容后，更容易二次整理、沉淀和复用</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon">🔒</div>
-        <h3>隐私与稳定性增强</h3>
-        <p>支持忽略密码管理器等敏感应用内容，并优化数据存储安全性</p>
+        <div class="feature-icon" aria-hidden="true">
+          <svg viewBox="0 0 256 256" fill="none">
+            <path d="M144 24 56 136h64l-8 96 88-112h-64l8-96Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
+          </svg>
+        </div>
+        <h3>菜单栏与快捷键双入口</h3>
+        <p>既能从菜单栏快速取用最近内容，也能通过 `⌘⇧V` 打开完整历史面板深入处理。</p>
       </div>
     </div>
+    <p class="feature-note">同时保留置顶、导出、开机自启动和敏感应用忽略等基础能力，让常用剪贴板工作流更完整，但首页不再把这些次要能力放在第一层强调。</p>
   </div>
 </section>
 

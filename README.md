@@ -4,7 +4,7 @@ MinClip 是一款面向 macOS 的菜单栏剪贴板管理工具。
 
 它会在后台自动记录你复制过的文本、图片、文件和富文本内容，让常用片段可以随时找回、快速复用，不必在聊天窗口、文档、终端和浏览器之间来回翻找。
 
-当前最新公开版本为 `v1.1.0`，详细更新内容见 [CHANGELOG.md](/Users/yyt/web/yyt/project/minClip/CHANGELOG.md)。
+当前最新公开版本为 `v1.2.0`，详细更新内容见 [CHANGELOG.md](/Users/yyt/web/yyt/project/minClip/CHANGELOG.md)。
 
 官网与下载：
 
